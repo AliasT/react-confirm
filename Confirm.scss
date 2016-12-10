@@ -1,0 +1,39 @@
+.confirm-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+  > div {
+    background: #fff;
+    border: solid 1px #ccc;
+    padding: 10px 15px;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    top: 10%;
+  }
+
+  .content {
+    padding: 5px;
+    max-width: 400px;
+    min-width: 200px;
+    word-wrap: break-word;
+  }
+
+  .options {
+    &:after {
+      content: ' ';
+      display: block;
+      clear: both;
+    }
+
+    margin-top: 20px;
+
+    button {
+      float: right;
+      margin: 5px 10px;
+    }
+  }
+}
